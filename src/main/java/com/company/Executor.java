@@ -28,7 +28,7 @@ public class Executor  implements Watcher
         Stat stat;
         try {
 
-            String Znode = zk.create(path, data,aclList,createMode);
+            String Znode = zk.create(path,data,aclList,createMode);
             System.out.println("Node si Znode"+ Znode);
             List<String> childnodes = new ArrayList<String>();
             childnodes = zk.getChildren("/",false);
